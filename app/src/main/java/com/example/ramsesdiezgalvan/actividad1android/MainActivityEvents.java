@@ -29,7 +29,7 @@ public class MainActivityEvents implements View.OnClickListener {
             actionBtnEdit();
             mainActivity.btnEditSave.setText(R.string.btnSave);
 
-            }else if (view.getContext().toString() == "GUARDAR"){
+            }else if (((Button) view).getText().equals("GUARDAR")){
 
                 actionBtnSave();
 
