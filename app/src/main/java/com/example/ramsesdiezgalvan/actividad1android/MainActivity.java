@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         events = new MainActivityEvents(this);
         initButton();
         initEditText();
-        Log.d("aaaa","Esto es el oncreate");
+
     }
 
     private void initEditText() {
@@ -56,8 +56,8 @@ public class MainActivity extends AppCompatActivity {
         txtMail = this.findViewById(R.id.txtMail);
         txtMail.setHint(R.string.txtMail);
 
-        txtName = this.findViewById(R.id.txtName);
-        txtName.setHint(R.string.txtName);
+        txtPhone = this.findViewById(R.id.txtPhone);
+        txtPhone.setHint(R.string.txtPhone);
 
         txtAdd = this.findViewById(R.id.txtAdd);
         txtAdd.setHint(R.string.txtAdd);
