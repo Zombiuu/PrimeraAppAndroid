@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Actividad1Android</string>
+    <string name="btnNext">SIGUIENTE</string>
+    <string name="btnSave">GUARDAR</string>
+    <string name="btnEdit">EDITAR</string>
+    <string name="txtName">NOMBRE</string>
+    <string name="txtMail">EMAIL</string>
+    <string name="txtPhone">TELEFONO</string>
+    <string name="txtAdd">DIRECCION</string>
+
+    <string-array name="title">
+        <item>title1</item>
+        <item>title2</item>
+    </string-array>
+    <string-array name="body">
+        <item>body1</item>
+        <item>body2</item>
+    </string-array>
+</resources>
