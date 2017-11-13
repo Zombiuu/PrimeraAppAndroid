@@ -16,6 +16,8 @@
     <!-- Article Activity-->
 
     <string name="btnProfile">PERFIL</string>
+    <string name="btnBack">ATRAS</string>
+    <string name="btnNext2">SIGUIENTE</string>
 
     <string-array name="title">
         <item>title1</item>

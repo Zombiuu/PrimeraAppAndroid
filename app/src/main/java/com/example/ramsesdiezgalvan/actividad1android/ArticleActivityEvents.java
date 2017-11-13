@@ -1,6 +1,7 @@
 package com.example.ramsesdiezgalvan.actividad1android;
 
 import android.content.Intent;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -9,7 +10,7 @@ import android.view.View;
 
 public class ArticleActivityEvents implements View.OnClickListener{
     private ArticleActivity articleActivity;
-
+    private int contador = 0 ;
 
     public ArticleActivityEvents(ArticleActivity articleActivity) {
         this.articleActivity = articleActivity;
@@ -27,6 +28,49 @@ public class ArticleActivityEvents implements View.OnClickListener{
             articleActivity.finish();
 
 
+
+        }else if (view.getId() == R.id.btnBack){
+            Log.d("donde estoy","boton menos antes");
+
+            if (contador < articleActivity.title.length) {
+                Log.d("donde estoy","boton menos dentro del if");
+                if(contador == 0){
+                   // articleActivity.btnBack.setEnabled(false);
+                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
+                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
+
+
+                }else{
+                  //  articleActivity.btnNext2.setEnabled(true);
+                    contador--;
+                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
+                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
+                }
+
+
+            }else{
+                Log.d("Error","Error en el array de titulos");
+            }
+
+
+        }else if (view.getId() == R.id.btnNext2){
+            Log.d("donde estoy","boton next antes");
+            if (contador <= articleActivity.title.length) {
+
+                if (contador == articleActivity.title.length ){
+                 //   articleActivity.btnNext2.setEnabled(false);
+                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
+                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
+
+                }else{
+                 //   articleActivity.btnBack.setEnabled(true);
+                    contador++;
+                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
+                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
+                }
+
+
+            }
 
         }
 
