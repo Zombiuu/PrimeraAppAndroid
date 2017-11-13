@@ -8,12 +8,19 @@ public class DataHolder {
 
     static public DataHolder instance = new DataHolder();
 
+
+
     public String name;
     public String email;
-    public String telefono;
+    public String phone;
     public String add;
     public int yy;
     public int mm;
     public int dd;
-
+    public DataHolder() {
+        name = "";
+        email = "";
+        phone = "";
+        add = "";
+    }
 }

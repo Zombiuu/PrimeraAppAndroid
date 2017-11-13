@@ -1,5 +1,7 @@
 package com.example.ramsesdiezgalvan.actividad1android;
 
+
+import android.content.Intent;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -39,12 +41,20 @@ public class MainActivityEvents implements View.OnClickListener {
     }
 
     private void actionBtnSave() {
+
+       DataHolder.instance.name = mainActivity.txtName.getText().toString();
+       DataHolder.instance.email = mainActivity.txtMail.getText().toString();
+       DataHolder.instance.phone = mainActivity.txtPhone.getText().toString();
+       DataHolder.instance.add = mainActivity.txtAdd.getText().toString();
+
     }
 
 
     public void actionBtnNext(){
 
-
+        Intent intent = new Intent(mainActivity,ArticleActivity.class);
+        mainActivity.startActivity(intent);
+        mainActivity.finish();
 
 
     }

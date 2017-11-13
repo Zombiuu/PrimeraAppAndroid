@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
         events = new MainActivityEvents(this);
         initButton();
         initEditText();
+        getEditText();
 
     }
+
 
     private void initEditText() {
 
@@ -76,20 +78,15 @@ public class MainActivity extends AppCompatActivity {
         btnEditSave.setText(R.string.btnEdit);
 
     }
+    private void getEditText() {
 
-    public EditText getTxtName() {
-        return txtName;
+        txtName.setText(DataHolder.instance.name.toString());
+        txtMail.setText(DataHolder.instance.email.toString());
+        txtPhone.setText(DataHolder.instance.phone.toString());
+        txtAdd.setText(DataHolder.instance.add.toString());
+
     }
 
-    public EditText getTxtMail() {
-        return txtMail;
-    }
 
-    public EditText getTxtPhone() {
-        return txtPhone;
-    }
 
-    public EditText getTxtAdd() {
-        return txtAdd;
-    }
 }
