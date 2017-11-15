@@ -30,19 +30,22 @@ public class ArticleActivityEvents implements View.OnClickListener{
 
 
         }else if (view.getId() == R.id.btnBack){
-            Log.d("donde estoy","boton menos antes");
+
 
             if (contador < articleActivity.title.length) {
-                Log.d("donde estoy","boton menos dentro del if");
+
                 if(contador == 0){
-                   // articleActivity.btnBack.setEnabled(false);
+
                     articleActivity.txtTitle.setText(articleActivity.title[contador]);
                     articleActivity.txtAreaText.setText(articleActivity.body[contador]);
 
 
                 }else{
-                  //  articleActivity.btnNext2.setEnabled(true);
+                    articleActivity.btnNext2.setEnabled(true);
                     contador--;
+                    if (contador == 0){
+                        articleActivity.btnBack.setEnabled(false);
+                    }
                     articleActivity.txtTitle.setText(articleActivity.title[contador]);
                     articleActivity.txtAreaText.setText(articleActivity.body[contador]);
                 }
@@ -58,13 +61,16 @@ public class ArticleActivityEvents implements View.OnClickListener{
             if (contador <= articleActivity.title.length) {
 
                 if (contador == articleActivity.title.length ){
-                 //   articleActivity.btnNext2.setEnabled(false);
+
                     articleActivity.txtTitle.setText(articleActivity.title[contador]);
                     articleActivity.txtAreaText.setText(articleActivity.body[contador]);
 
                 }else{
-                 //   articleActivity.btnBack.setEnabled(true);
+                  articleActivity.btnBack.setEnabled(true);
                     contador++;
+                    if (contador == articleActivity.title.length - 1){
+                        articleActivity.btnNext2.setEnabled(false);
+                    }
                     articleActivity.txtTitle.setText(articleActivity.title[contador]);
                     articleActivity.txtAreaText.setText(articleActivity.body[contador]);
                 }

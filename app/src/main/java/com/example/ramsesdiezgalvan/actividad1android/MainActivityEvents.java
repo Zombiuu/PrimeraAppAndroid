@@ -47,6 +47,19 @@ public class MainActivityEvents implements View.OnClickListener {
        DataHolder.instance.phone = mainActivity.txtPhone.getText().toString();
        DataHolder.instance.add = mainActivity.txtAdd.getText().toString();
 
+
+       DataHolder.instance.dd = mainActivity.datePicker.getDayOfMonth();
+       DataHolder.instance.mm = mainActivity.datePicker.getMonth();
+       DataHolder.instance.yy = mainActivity.datePicker.getYear();
+
+
+        mainActivity.btnEditSave.setText(R.string.btnEdit);
+
+        mainActivity.txtName.setEnabled(false);
+        mainActivity.txtMail.setEnabled(false);
+        mainActivity.txtPhone.setEnabled(false);
+        mainActivity.txtAdd.setEnabled(false);
+
     }
 
 

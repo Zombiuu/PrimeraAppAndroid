@@ -22,11 +22,58 @@
     <string-array name="title">
         <item>title1</item>
         <item>title2</item>
+        <item>title3</item>
+        <item>title4</item>
+        <item>title5</item>
+        <item>title6</item>
+        <item>title7</item>
+
     </string-array>
 
     <string-array name="body">
-        <item>body1</item>
-        <item>body2</item>
+        <item>
+            Nos hicieron creer que el “Gran Amor” solo sucede una vez, generalmente antes de los 30 años. No nos contaron que el amor no es accionado, ni llega en un momento determinado. No saben nada del “Gran amor” los que hablan, yo creo que “Amor” es ver a esa mujer y querer que sea la madre de mis hijos.
+
+Nos hicieron creer que cada uno de nosotros es la mitad de una naranja, y que la vida sólo tiene sentido cuando encontramos la otra mitad. No nos contaron que ya nacemos enteros, que nadie en nuestra vida merece cargar en las espaldas la responsabilidad de completar lo que nos falta. Yo a la naranja la quiero al medio para exprimirla tomarla y luego tirarla.
+
+
+        </item>
+        <item>
+            Nos hicieron creer que cada uno de nosotros es la mitad de una naranja, y que la vida sólo tiene sentido cuando encontramos la otra mitad. No nos contaron que ya nacemos enteros, que nadie en nuestra vida merece cargar en las espaldas la responsabilidad de completar lo que nos falta. Yo a la naranja la quiero al medio para exprimirla tomarla y luego tirarla.
+
+Las personas crecen a través de la gente. Si estamos en buena compañía es más agradable.
+
+Nos hicieron creer en una formula llamada “dos en uno”: dos personas pensando igual, actuando igual, que era eso lo que funcionaba. No nos contaron que eso tiene nombre: ANULACION
+        </item>
+        <item>
+            Nos hicieron creer que solo hay una formula para ser feliz, la misma para todos, y los que escapan de ella están condenados a la marginalidad.
+
+No nos contaron que estas formulas son equivocadas, frustran a las personas, son alienantes y que podemos intentar otras alternativas.
+
+Ahhh…tampoco nos dijeron que nadie nos iba a decir todo esto.
+
+Cada uno lo va a tener que averiguar solito, y ahí, cuando estés muy “enamorado de vos, vas a poder ser muy feliz y te vas a poder enamorar de alguien”.
+        </item>
+        <item>
+            Solo siendo individuos con personalidad propia , podremos tener una relación saludable.
+
+Nos hicieron creer que el casamiento es obligatorio y que los deseos fuera de término deben ser reprimidos.
+
+Nos hicieron creer que los lindos/as y flacos/as son más amados/as y es mentira.
+        </item>
+        <item>
+            Las personas crecen a través de la gente. Si estamos en buena compañía es más agradable.
+
+Nos hicieron creer en una formula llamada “dos en uno”: dos personas pensando igual, actuando igual, que era eso lo que funcionaba. No nos contaron que eso tiene nombre: ANULACION
+
+
+        </item>
+        <item>
+           Nos hicieron creer que cada uno de nosotros es la mitad de una naranja, y que la vida sólo tiene sentido cuando encontramos la otra mitad. No nos contaron que ya nacemos enteros, que nadie en nuestra vida merece cargar en las espaldas la responsabilidad de completar lo que nos falta. Yo a la naranja la quiero al medio para exprimirla tomarla y luego tirarla.
+        </item>
+        <item>
+              Nos hicieron creer que el “Gran Amor” solo sucede una vez, generalmente antes de los 30 años. No nos contaron que el amor no es accionado, ni llega en un momento determinado. No saben nada del “Gran amor” los que hablan, yo creo que “Amor” es ver a esa mujer y querer que sea la madre de mis hijos.
+        </item>
     </string-array>
 
 </resources>

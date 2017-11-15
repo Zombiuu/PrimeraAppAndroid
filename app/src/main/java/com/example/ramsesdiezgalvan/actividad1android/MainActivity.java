@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -33,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
     private MainActivityEvents events;
 
-
+    //contenedor
+    private TableRow contenedor;
 
 
     @Override
@@ -64,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
         txtAdd = this.findViewById(R.id.txtAdd);
         txtAdd.setHint(R.string.txtAdd);
 
+        datePicker = this.findViewById(R.id.datePicker);
+
 
     }
 
@@ -84,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         txtMail.setText(DataHolder.instance.email.toString());
         txtPhone.setText(DataHolder.instance.phone.toString());
         txtAdd.setText(DataHolder.instance.add.toString());
+        datePicker.updateDate(DataHolder.instance.yy,DataHolder.instance.mm,DataHolder.instance.dd);
 
     }
 

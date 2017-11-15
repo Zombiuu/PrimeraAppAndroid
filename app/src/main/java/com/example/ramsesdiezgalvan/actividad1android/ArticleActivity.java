@@ -76,6 +76,7 @@ public class ArticleActivity extends AppCompatActivity {
         btnBack = this.findViewById(R.id.btnBack);
         btnBack.setOnClickListener(events);
         btnBack.setText(R.string.btnBack);
+        btnBack.setEnabled(false);
 
     }
 }
