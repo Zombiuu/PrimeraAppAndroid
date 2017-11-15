@@ -57,28 +57,30 @@ public class ArticleActivityEvents implements View.OnClickListener{
 
 
         }else if (view.getId() == R.id.btnNext2){
-            Log.d("donde estoy","boton next antes");
-            if (contador <= articleActivity.title.length) {
-
-                if (contador == articleActivity.title.length ){
-
-                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
-                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
-
-                }else{
-                  articleActivity.btnBack.setEnabled(true);
-                    contador++;
-                    if (contador == articleActivity.title.length - 1){
-                        articleActivity.btnNext2.setEnabled(false);
-                    }
-                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
-                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
-                }
-
-
+            if (!articleActivity.btnBack.isEnabled() && contador == 0){
+                articleActivity.btnBack.setEnabled(true);
             }
+            if (contador >= 0 && contador < articleActivity.title.length-1) {
+                    contador++;
+                    articleActivity.txtTitle.setText(articleActivity.title[contador]);
+                    articleActivity.txtAreaText.setText(articleActivity.body[contador]);
+                }else{
+                    articleActivity.btnNext2.setEnabled(false);
+                }
+            }else if (view.getId() == R.id.btnBack){
+            if (!articleActivity.btnNext2.isEnabled()){
+                articleActivity.btnNext2.setEnabled(true);
+            }
+            if (contador > 0 && contador < articleActivity.title.length) {
+                contador--;
+                articleActivity.txtTitle.setText(articleActivity.title[contador]);
+                articleActivity.txtAreaText.setText(articleActivity.body[contador]);
+            }else{
+                articleActivity.btnBack.setEnabled(false);
+            }
+        }
 
         }
 
     }
-}
+
